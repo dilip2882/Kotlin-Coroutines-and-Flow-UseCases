@@ -1,8 +1,7 @@
-package com.dilip.kotlin_coroutines_and_flow_usecases
+package com.dilip.kotlincoroutinesandflowusecases
 
+import org.junit.Assert.assertEquals
 import org.junit.Test
-
-import org.junit.Assert.*
 
 /**
  * Example local unit test, which will execute on the development machine (host).
