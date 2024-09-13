@@ -39,22 +39,6 @@ Unit Tests exist for most use cases.
 * Comparing Kotlin Coroutines with Callbacks and RxJava [[link](https://www.lukaslechner.com/comparing-kotlin-coroutines-with-callbacks-and-rxjava/)]
 * How to run an expensive calculation with Kotlin Coroutines on the Android Main Thread without freezing the UI [[link](https://www.lukaslechner.com/how-to-run-an-expensive-calculation-with-kotlin-coroutines-on-the-android-main-thread-without-freezing-the-ui/)]
 
-Sign up to my [newsletter](https://www.lukaslechner.com/newsletter/) to never miss new content. I will publish new blog posts and videos about Coroutines and Flow on a regular basis.
-
-## 🎓 Online Course
-
-This project is the foundation of a comprehensive Online Course about [Kotlin Coroutines and Flow for Android Development](https://lukaslechner.com/coroutines-flow-android?source=github)
-In the course, we are going to implement the use cases of this repository together, as well as talk about all the necessary concepts that you need to know. 
-
-[![CourseCoroutinesOnAndroid](documentation/images/course.png)](https://lukaslechner.com/coroutines-flow-android?source=github)
-
-## 📢 Sharing is Caring 
-
-If you like this project, please tell other developers about it! ❤️
-
-[![Share on Twitter](documentation/images/Twitter_bird_logo.png)](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%2FLukasLechnerDev%2FKotlin-Coroutine-Use-Cases-on-Android&text=This%20awesome%20example%20project%20shows%20how%20to%20implement%20the%20most%20common%20use%20cases%20for%20using%20Kotlin%20Coroutines%20for%20Android%20Development%21%20By%20@LukasLechnerDev&hashtags=%23AndroidDev%20%23Kotlin%20%23Coroutines)
-
-If you like, you can follow me on Twitter [**@LukasLechnerDev**](https://twitter.com/LukasLechnerDev).
 
 ## ⭐️ Coroutine Use Cases
 1. [Perform single network request](#1-perform-single-network-request)
@@ -275,25 +259,3 @@ In the `Activity`, the `repeadOnLifecycle` suspend function is used to collect e
 [[code viewmodel](app/src/main/java/com/dilip/kotlincoroutinesandflowusecases/usecases/flow/usecase4/FlowUseCase4ViewModel.kt)]
 [[code datasource](app/src/main/java/com/dilip/kotlincoroutinesandflowusecases/usecases/flow/usecase4/StockPriceDataSource.kt)]
 
-## Author
-
-![LukasLechner](documentation/images/lukle.png)
-
-[Lukas Lechner](https://www.lukaslechner.com)
-
-[Twitter](https://twitter.com/LukasLechnerDev) 
-
-## License
-
-Licensed under the Apache License, Version 2.0 (the "License").
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-You agree that all contributions to this repository, in the form of fixes, pull-requests, new examples etc. follow the above-mentioned license.
