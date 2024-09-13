@@ -22,7 +22,9 @@ class Perform2SequentialNetworkRequestsViewModel(
                 uiState.value = UiState.Success(featuresOfMostRecentVersion)
             } catch (exception: Exception) {
                 uiState.value = UiState.Error("Network Request failed")
+
             }
         }
     }
 }
+
