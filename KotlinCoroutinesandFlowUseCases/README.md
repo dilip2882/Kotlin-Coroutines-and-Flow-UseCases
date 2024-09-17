@@ -44,6 +44,30 @@ GlobalScope.launch {
 }
 ```
 
+### Flows
+
+Flows are a type of asynchronous stream of data in Kotlin. They are built on top of coroutines and allow you to emit multiple values sequentially. Key points about flows:
+
+* **Multiple Values:** Unlike suspend functions that return a single value, flows can emit multiple values over time.
+* **Conceptual Stream:** Think of a flow as a stream of data that can be computed asynchronously. Each emitted value must be of the same type.
+* **Producer-Consumer Model:** Flows involve three entities:
+    * **Producer:** Produces data that is added to the stream. For example, a repository fetching data from a network can act as a producer.
+    * **Intermediaries** (optional): Modify values emitted into the stream or the stream itself.
+    * **Consumer:** Consumes values from the stream (e.g., UI layer displaying data).
+
+**Example of creating a flow manually:**
+
+```kotlin
+// Creating a flow
+fun fetchNews(): Flow<List<Article>> = flow {
+    while (true) {
+        val latestNews = fetchLatestNewsFromApi()
+        emit(latestNews) // Emit the result to the flow
+        delay(5000) // Simulate periodic updates
+    }
+}
+```
+
 ## 🍿️ Related Videos
 * Kotlin Flow on Android Basics Playlist [[link](https://youtube.com/playlist?list=PL-1MzrWZIYU3McdBOEic_1nsy8Rw48xIO)]
 * Kotlin Coroutines Fundamentals Playlist [[link](https://www.youtube.com/playlist?list=PL-1MzrWZIYU2a4TGbSXeXzfet8Br3cya1)]
