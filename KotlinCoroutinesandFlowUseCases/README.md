@@ -23,8 +23,26 @@ Android version.
 
 Unit Tests exist for most use cases.
 
-## what is coroutine and flow
+## what is coroutine and flow?
+### Coroutines
 
+Coroutines are a powerful feature in Kotlin that allow you to write asynchronous, non-blocking code in a more structured and readable way. Here are the key points about coroutines:
+
+* **Asynchronous Execution:** Coroutines provide a way to perform tasks asynchronously without blocking the main thread. They are lightweight and can handle concurrency more efficiently than traditional threads.
+* **Suspend Functions:** Coroutines use `suspend` functions, which can be paused and resumed. When a `suspend` function is called, it doesn't block the thread; instead, it suspends execution until the result is available.
+* **Structured Concurrency:** Coroutines are organized into structured concurrency. You can launch coroutines within specific scopes (e.g., `runBlocking`, `viewModelScope`, etc.), and they automatically manage their lifecycle.
+* **Coroutine Builders:** You create coroutines using coroutine builders like `launch`, `async`, and `flow`. These builders allow you to define asynchronous tasks and handle their execution.
+* **Cancellation and Exception Handling:** Coroutines provide mechanisms for graceful cancellation and exception handling.
+
+**Example of launching a coroutine:**
+
+```kotlin
+// Launch a coroutine
+GlobalScope.launch {
+    val result = fetchDataFromNetwork()
+    println("Received data: $result")
+}
+```
 
 ## 🍿️ Related Videos
 * Kotlin Flow on Android Basics Playlist [[link](https://youtube.com/playlist?list=PL-1MzrWZIYU3McdBOEic_1nsy8Rw48xIO)]
